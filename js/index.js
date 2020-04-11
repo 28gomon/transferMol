@@ -188,3 +188,29 @@ Sim.initialize = function (that) {
 
 new Sim('slider1');
 new Sim('slider2');
+
+const popUp = document.getElementById('popUp');
+const topPhone = document.querySelector('.top-phone');
+
+popUp.addEventListener('click',(event) => {
+
+    const target = event.target;
+
+    if (target.classList.contains('popUp')) {
+        popUp.style.display = 'none';
+    }
+
+    if (target.closest('.button-close')) {
+        popUp.style.display = 'none';
+    }
+
+});
+
+topPhone.addEventListener('click', (event) => {
+
+    const target = event.target;
+
+    if (target.closest('.top-phone')) {
+        popUp.style.display = 'flex';
+    }
+});
