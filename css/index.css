@@ -50,6 +50,13 @@ header {
     padding-right: 8px;
 }
 
+@media (max-width: 1200px) {
+
+    .header-information {
+        justify-content: space-between;
+    }
+}
+
 /* top-component */
 .top-component {
     display: flex;
@@ -67,6 +74,7 @@ header {
     width: 50%;
     height: 100%;
     background: no-repeat url("../img/top-image.png");
+    background-size: cover;
 }
 
 .top-image-bg::after {
@@ -82,11 +90,15 @@ header {
 .top-content {
     position: relative;
     margin-left: 30px;
-    width: 60%;
+    width: 50%;
 }
 
 .top-title {
     text-transform: uppercase;
+}
+
+.top-title .title {
+    line-height: 1.6;
 }
 
 .top-description {
@@ -105,6 +117,44 @@ header {
 .top-phone a {
     font-weight: bold;
     font-size: 28px;
+}
+
+@media (max-width: 1200px) {
+
+    .top-content {
+        width: 80%;
+    }
+
+    .top-image-bg {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 70%;
+        height: 80%;
+        background: no-repeat url("../img/top-image.png");
+        background-size: cover;
+    }
+
+    .top-phone span {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .top-component {
+        height: 600px;
+    }
+
+    .top-content {
+        width: 100%;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .top-image-bg {
+        top: 80px;
+    }
 }
 /* top-component */
 
