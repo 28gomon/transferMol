@@ -186,4 +186,5 @@ Sim.initialize = function (that) {
     }
 };
 
-new Sim();
+new Sim('slider1');
+new Sim('slider2');

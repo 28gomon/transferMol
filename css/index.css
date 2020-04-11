@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
 }
 
-section {
+section, footer {
     width: 100%;
     max-width: 1440px;
     margin: auto;
@@ -54,6 +54,22 @@ header {
 
     .header-information {
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-information {
+        display: block;
+        text-align: center;
+    }
+
+    .header-information > div p {
+        font-size: 16px;
+    }
+
+    .header-information > div a {
+        font-size: 16px;
     }
 }
 
@@ -156,6 +172,60 @@ header {
         top: 80px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .top-component {
+        height: 550px;
+    }
+
+    .top-title .title {
+        font-size: 25px;
+        margin-top: 0;
+    }
+
+    .top-image-bg {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 90%;
+        height: 80%;
+        background: no-repeat url("../img/top-image.png");
+        background-size: cover;
+    }
+
+    .top-image-bg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.87);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .top-component {
+            height: 680px;
+    }
+
+    .top-image-bg {
+        position: absolute;
+        top: 30%;
+        right: 0;
+        width: 100%;
+        height: 55%;
+        background: no-repeat url("../img/top-image.png");
+        background-size: cover;
+    }
+
+    .top-title .title {
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
 /* top-component */
 
 /* block-information */
@@ -179,6 +249,22 @@ header {
     margin-bottom: 40px;
     opacity: .75;
 }
+
+@media (max-width: 992px) {
+
+    .block-content {
+        display: block;
+    }
+
+    .block-content > div {
+        width: 100%;
+    }
+
+    .block-text {
+        margin-top: 40px;
+        padding-left: 25px;
+    }
+}
 /* block-information */
 
 /* auto-information */
@@ -201,6 +287,24 @@ header {
 
 .auto-characteristics {
     padding-left: 30px;
+}
+
+@media (max-width: 992px) {
+
+    .auto-block {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .auto-block > div {
+        width: 100%;
+    }
+
+    .auto-characteristics {
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 /* auto-information */
 
@@ -295,3 +399,15 @@ span.sim-dot {
     cursor: pointer;
 }
 /* slider */
+
+/* footer */
+footer {
+    background: #eaeaea;
+}
+
+.footer-section {
+    padding: 50px 0;
+    font-size: 18px;
+    text-align: center;
+}
+/* footer */
