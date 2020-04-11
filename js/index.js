@@ -198,10 +198,12 @@ popUp.addEventListener('click',(event) => {
 
     if (target.classList.contains('popUp')) {
         popUp.style.display = 'none';
+        document.body.style.overflow = '';
     }
 
     if (target.closest('.button-close')) {
         popUp.style.display = 'none';
+        document.body.style.overflow = '';
     }
 
 });
@@ -212,5 +214,6 @@ topPhone.addEventListener('click', (event) => {
 
     if (target.closest('.top-phone')) {
         popUp.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
     }
 });
