@@ -85,7 +85,7 @@ header {
 
 .top-image-bg {
     position: absolute;
-    top: 150px;
+    top: 20px;
     right: 0;
     width: 50%;
     height: 100%;
@@ -123,6 +123,7 @@ header {
 
 .top-phone {
     font-size: 25px;
+    cursor: pointer;
 }
 
 .top-phone span {
@@ -133,6 +134,10 @@ header {
 .top-phone a {
     font-weight: bold;
     font-size: 28px;
+}
+
+.top-phone a:hover {
+    text-decoration: none;
 }
 
 @media (max-width: 1200px) {
